@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROYECTO PIPAS TLÁHUAC (BETA)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSolicitante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre del solicitante"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etColonia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Colonia (ej. Zapotitlán, Tlaltenco, Mixquic)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etUrgencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Urgencia (1: Máxima, 2: Media, 3: Baja)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etDias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Días sin agua"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Registrar en Cola Prioritaria" />
+
+        <Button
+            android:id="@+id/btnAtender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Atender Siguiente Prioridad + Ruta" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:text="Estado: Listo para registrar solicitudes."
+            android:textColor="#111111"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
